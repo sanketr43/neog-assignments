@@ -215,6 +215,62 @@ a{
 /*chip component end*/
 
 
+/*Drawer component start*/
+.drawer{
+    background: white;
+    width: 250px;
+    box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.drawer-header{
+    padding: 10px;
+}
+
+.drawer-header .drawer-header-title{
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.drawer-header .drawer-header-subtitle{
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: gray;
+}
+
+.drawer-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.drawer-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.drawer-list-item{
+    display: flex;
+    padding: 5px 10px;
+    align-items: center;
+    color: #696767;
+    height: 35px;
+}
+
+.drawer-list-item i{
+    margin-right: 32px;
+}
+
+.drawer-list-item:hover{
+    background: hsla(0, 0%, 52%, 0.301);
+    border-radius: 4px;
+}
+
+/*Drawer component end*/
+
+
 
 
 
