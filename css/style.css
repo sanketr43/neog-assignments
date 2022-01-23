@@ -27,6 +27,10 @@ a{
     flex-wrap: wrap;
 }
 
+@media screen and (max-width: 400px) {
+    margin: 10px;
+}
+
 /*button element start*/
 .btn{
     padding: 10px 15px;
@@ -35,6 +39,8 @@ a{
     letter-spacing: 1px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
+    position: relative;
+    border: none;
 }
 
 .btn:hover,.btn:focus,.btn:active{
@@ -52,7 +58,34 @@ a{
 
 .btn-icon:hover,.btn-icon:focus,.btn-icon:active{
     background: rgba(128, 128, 128, 0.1);
+    border-radius: 4px;
+    border: none;
 }
+
+.btn-twitter{
+    background: #1D9BF0;
+    color: white;
+    border-radius: 4px;
+}
+
+.btn-twitter:hover{
+    background: #2a9feca8;
+    color: white;
+}
+
+.btn-facebook{
+    background: #1d32f0;
+    color: white;
+    border-radius: 4px;
+}
+
+.btn-facebook:hover{
+    background: #2a6eeca8;
+    color: white;
+}
+
+
+
 /*button element end*/
 
 /*card component start*/
@@ -269,6 +302,34 @@ a{
 }
 
 /*Drawer component end*/
+
+/*badge component start*/
+.badge{
+    background: gray;
+    padding: 5px;
+    width: 22px;
+    height: 22px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    color: white;
+    border-radius: 50%;
+}
+
+.badge-purple{
+    background: purple;
+    color: white;
+}
+
+.badge-orange{
+    background: orange;
+    color: white;
+}
+/*badge component end*/
 
 
 
