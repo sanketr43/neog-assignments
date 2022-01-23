@@ -22,6 +22,8 @@ a{
 
 .component{
     margin: 20px 20px;
+    display: flex;
+    gap: 10px;
 }
 
 /*button element start*/
@@ -113,6 +115,68 @@ a{
 }
 
 /*card component end*/
+
+/*chip component start*/
+.chip-container{
+    width: 450px;
+    padding: 10px;
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    background: #F7F7F7;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chip{
+    cursor: context-menu;
+    background: #e0e0e0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    min-width: 100px;
+}
+
+.chip:hover{
+    background: #cdcdcd;
+}
+
+.chip-text{
+    padding: 5px 10px;
+}
+
+.chip span:first-child{
+    margin-right: auto;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: #949494;
+    color: aliceblue;
+    font-size: 14px;
+    background: blueviolet;
+}
+
+.chip span:last-child{
+    margin-left: auto;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.chip span:last-child:hover{
+    background: #949494;
+}
+
+/*chip component end*/
 
 
 
