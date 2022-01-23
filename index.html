@@ -243,18 +243,29 @@
     </div>
 
 
+
+    <!--snakbar html & script-->
     <div class="snakbar snakbar-float" id="snackbarOne" style="display: none;">
         <p>Can't send photo. Retry in 10 seconds.</p>
         <button>Retry</button>
-        <span><i class="bi bi-x"></i></span>
+        <span onclick="hideSnackbar();"><i class="bi bi-x"></i></span>
     </div>
     <script>
         function showSnackbar(){
             let snackbar = document.getElementById("snackbarOne"); 
             snackbar.style.display = "flex";
             setTimeout(function(){
-                snackbar.style.display = "none";
-            },3000);
+                if(snackbar.style.display == "flex"){
+                    snackbar.style.display = "none";
+                }
+            },5000);
+        }
+
+        function hideSnackbar(){
+            let snackbar = document.getElementById("snackbarOne"); 
+            if(snackbar.style.display == "flex"){
+                    snackbar.style.display = "none";
+                }
         }
     </script>
 </body>
