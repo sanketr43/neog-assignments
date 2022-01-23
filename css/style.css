@@ -43,6 +43,7 @@ a{
     font-weight: 500;
     position: relative;
     border: none;
+    cursor: pointer;
 }
 
 .btn:hover,.btn:focus,.btn:active{
@@ -64,13 +65,24 @@ a{
     border: none;
 }
 
+.btn-linkedin{
+    background: #0A66C2;
+    color: white;
+    border-radius: 4px;
+}
+
+.btn-linkedin:hover,.btn-linkedin:active,.btn-linkedin:focus{
+    background: #1d70c4;
+    color: white;
+}
+
 .btn-twitter{
     background: #1D9BF0;
     color: white;
     border-radius: 4px;
 }
 
-.btn-twitter:hover{
+.btn-twitter:hover,.btn-twitter:active,.btn-twitter:focus{
     background: #2a9feca8;
     color: white;
 }
@@ -81,12 +93,10 @@ a{
     border-radius: 4px;
 }
 
-.btn-facebook:hover{
+.btn-facebook:hover,.btn-facebook:active,.btn-facebook:focus{
     background: #2a6eeca8;
     color: white;
 }
-
-
 
 /*button element end*/
 
@@ -332,6 +342,122 @@ a{
     color: white;
 }
 /*badge component end*/
+
+/*header component start*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #6200EE;
+    color: white;
+}
+
+.navbar-logo{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo div{
+    padding: 10px;
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+}
+
+.navbar-logo div:hover{
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.navbar-logo h2{
+    font-size: 1rem;
+}
+
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.navbar ul li:hover{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+/*header component end*/
+
+/*snackbar component start*/
+.snakbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333333;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    max-width: 600px;
+    box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+}
+
+.snakbar-float{
+    position: fixed;
+    z-index: 1;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+@media screen and (max-width: 400px) {
+    .snakbar-float{
+        width: 95%;
+    }
+}
+
+.snakbar p{
+    font-size: 14px;
+    padding: 10px;
+}
+
+.snakbar button{
+    padding: 10px 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background: none;
+    color: #A768F9;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.snakbar button:hover{
+    background: hsla(266, 88%, 73%, 0.2);
+    border-radius: 4px;
+}
+
+.snakbar span{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.snakbar span:hover{
+    background: hsla(240, 0%, 50%, 0.2);
+    border-radius: 50%;
+}
+
+/*snakbar component end*/
 
 
 

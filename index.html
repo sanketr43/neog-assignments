@@ -103,6 +103,7 @@
             </div>
         </div>
     </div>
+
     <div class="header">
         <h3>Chip Component</h3>
     </div>
@@ -177,6 +178,7 @@
             </div>
         </div>
     </div>
+
     <div class="header">
         <h3>Drawer Component</h3>
     </div>
@@ -196,15 +198,64 @@
             </div>
         </div>
     </div>
+
     <div class="header">
         <h3>Badge Component</h3>
     </div>
     <div class="component">
-        <button class="btn btn-twitter"><i class="bi bi-twitter"></i> <span class="badge">5</span> </button>
+        <br>
+        <button class="btn btn-linkedin"><i class="bi bi-linkedin"></i> <span class="badge">5</span> </button>
         &nbsp;
         <button class="btn btn-twitter"><i class="bi bi-twitter"></i> <span class="badge badge-purple">10</span> </button>
         &nbsp;
-        <button class="btn btn-facebook"><i class="bi bi-meta"></i> <span class="badge badge-orange">10</span> </button>
+        <button class="btn btn-facebook"><i class="bi bi-facebook"></i> Facebook <span class="badge badge-orange">10</span> </button>
     </div>
+
+    <div class="header">
+        <h3>Header Component</h3>
+    </div>
+    <div class="component">
+        <header class="navbar">
+            <div class="navbar-logo">
+                <div><i class="bi bi-list"></i></div>
+                <h2>San Francisco, CA</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><i class="bi bi-download"></i></li>
+                    <li><i class="bi bi-printer-fill"></i></li>
+                    <li><i class="bi bi-bookmark-fill"></i></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="header">
+        <h3>Snackbar Component</h3>
+    </div>
+    <div class="component">
+        <div class="snakbar">
+            <p>Can't send photo. Retry in 5 seconds.</p>
+            <button>Retry</button>
+            <span><i class="bi bi-x"></i></span>
+        </div>
+        <button onclick="showSnackbar();" class="btn btn-facebook">Click Me</button>
+    </div>
+
+
+    <div class="snakbar snakbar-float" id="snackbarOne" style="display: none;">
+        <p>Can't send photo. Retry in 10 seconds.</p>
+        <button>Retry</button>
+        <span><i class="bi bi-x"></i></span>
+    </div>
+    <script>
+        function showSnackbar(){
+            let snackbar = document.getElementById("snackbarOne"); 
+            snackbar.style.display = "flex";
+            setTimeout(function(){
+                snackbar.style.display = "none";
+            },3000);
+        }
+    </script>
 </body>
 </html>
