@@ -28,7 +28,9 @@ a{
 }
 
 @media screen and (max-width: 400px) {
-    margin: 10px;
+    .component{
+        margin: 10px;
+    }
 }
 
 /*button element start*/
